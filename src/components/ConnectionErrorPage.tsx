@@ -19,7 +19,7 @@ export default function ConnectionErrorPage() {
     >
       <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
         <WifiOffTwoToneIcon sx={{ fontSize: 80, color: 'error.main', mb: 3 }} />
-        <Typography variant="h4" fontWeight="bold" gutterBottom>
+        <Typography variant="h4" sx={{ fontWeight: 'bold' }} gutterBottom>
           Sunucuya Bağlanılamıyor
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>

@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/bv-cafe-frontend/', // GitHub Pages alt dizinleri için mutlak yol
+  base: '/', // GitHub Pages özel alan adı için kök dizin
   plugins: [react()],
   server: {
     port: 5173,

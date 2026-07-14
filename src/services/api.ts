@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useNetworkStore } from '../stores/networkStore';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',
@@ -16,9 +17,18 @@ api.interceptors.request.use((config) => {
 
 // Response interceptor for error handling
 api.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    // If a request succeeds, ensure network is marked as up
+    if (useNetworkStore.getState().isDown) {
+      useNetworkStore.getState().setDown(false);
+    }
+    return response;
+  },
   (error) => {
     console.error('[API Error]', error.response?.data || error.message);
+    if (!error.response || error.code === 'ERR_NETWORK') {
+      useNetworkStore.getState().setDown(true);
+    }
     return Promise.reject(error);
   }
 );

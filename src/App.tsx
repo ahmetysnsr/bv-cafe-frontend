@@ -9,8 +9,16 @@ import AdminSettings from './pages/AdminSettings';
 import RobotTracker from './pages/RobotTracker';
 import RobotMap from './pages/RobotMap';
 import AdminLayout from './components/Layout/AdminLayout';
+import ConnectionErrorPage from './components/ConnectionErrorPage';
+import { useNetworkStore } from './stores/networkStore';
 
 function App() {
+  const isNetworkDown = useNetworkStore((state) => state.isDown);
+
+  if (isNetworkDown) {
+    return <ConnectionErrorPage />;
+  }
+
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />

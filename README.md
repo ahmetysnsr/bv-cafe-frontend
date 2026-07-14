@@ -11,14 +11,17 @@ Projenin çalışan güncel haline aşağıdaki bağlantıdan ulaşabilirsiniz:
 
 ---
 
-## ✨ Özellikler
+## ✨ Öne Çıkan Özellikler
 
-- **QR Tabanlı Sipariş:** Masalara özel üretilen benzersiz QR kodlar ile anında menüye erişim.
-- **Canlı Robot Entegrasyonu:** Verilen siparişlerin gerçek zamanlı olarak Saha Robotik altyapısına (API) iletilmesi.
-- **Çift Dil Desteği:** Türkçe ve İngilizce (i18n) arayüz desteği.
-- **Güvenli Sipariş:** "Idempotency Key" mimarisi ile ağ kopmalarında veya çift tıklamalarda mükerrer siparişin önüne geçilmesi.
-- **Modern Arayüz:** Material UI (MUI) ve Framer Motion ile tasarlanmış pürüzsüz animasyonlar ve karanlık (Dark) mod tasarımı.
-- **Yönetim Paneli:** Ürün yönetimi, masa kontrolü ve sipariş takibi için Admin arayüzü.
+Sistem, güvenliği ve hızı ön planda tutan bir dizi gelişmiş özellik sunar:
+
+- **⏳ Dinamik ve Süreli QR Kodlar:** Masalarda bulunan QR kodlar dışarıdan taranıp sipariş verilmesini engellemek için her 5 dakikada bir otomatik yenilenir. Süresi dolan kodla sipariş verilemez.
+- **📍 Geofencing (Konum Doğrulama):** Kullanıcının masada/ofiste olduğunu kanıtlaması için tarayıcı üzerinden konum doğrulaması (GPS Geolocation) yapılır. Sadece belirli bir yarıçap (radius) içerisinden sipariş gönderilebilir.
+- **🛡️ Mükerrer Sipariş Koruması (Idempotency):** Ağ bağlantısı koptuğunda veya butona çift tıklandığında siparişin iki kere işlenmemesi için kriptografik `Idempotency Key` mimarisi kullanılır.
+- **🤖 Otonom Robot Entegrasyonu:** Sipariş alındığı an, kullanıcının masasına (Örn: Saha-Cafe_0_16) otonom hizmet sağlayan Saha Robotik donanımlarına otomatik yönlendirme ve POST payload gönderimi yapılır.
+- **🌍 Çoklu Dil Seçeneği (i18n):** Müşteriler tek dokunuşla Türkçe (TR) ve İngilizce (EN) dilleri arasında anında geçiş yapabilir.
+- **🎛️ Gelişmiş Yönetim Paneli (Admin):** Yetkili kişilerin masa tanımlayabileceği, ürün ekleyip çıkartabileceği ve sistem ayarlarını (QR süresi, konum toleransı) canlı düzenleyebileceği bir admin ekranı mevcuttur.
+- **💅 Pürüzsüz UX/UI (MUI & Framer Motion):** Tüm işlemler arası geçişler, sepet animasyonları ve uyarı mesajları kullanıcı dostu ve akıcı bir karanlık tema (Dark Mode) tasarımıyla sunulur.
 
 ## 🚀 Kurulum & Çalıştırma (Lokal)
 

@@ -1,32 +1,58 @@
-# React + TypeScript + Vite
+# 🤖 BV Robotik Cafe - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Bu proje, **BV Robotik Cafe** için geliştirilmiş, masalardaki QR kodlar üzerinden sipariş alınmasını ve bu siparişlerin otonom robotlara iletilmesini sağlayan modern, hızlı ve responsive bir web arayüzüdür.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Canlı Demo (Live URL)
 
-## React Compiler
+Projenin çalışan güncel haline aşağıdaki bağlantıdan ulaşabilirsiniz:
+👉 **[https://ahmetysnsr.github.io/bv-cafe-frontend/](https://ahmetysnsr.github.io/bv-cafe-frontend/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Özellikler
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **QR Tabanlı Sipariş:** Masalara özel üretilen benzersiz QR kodlar ile anında menüye erişim.
+- **Canlı Robot Entegrasyonu:** Verilen siparişlerin gerçek zamanlı olarak Saha Robotik altyapısına (API) iletilmesi.
+- **Çift Dil Desteği:** Türkçe ve İngilizce (i18n) arayüz desteği.
+- **Güvenli Sipariş:** "Idempotency Key" mimarisi ile ağ kopmalarında veya çift tıklamalarda mükerrer siparişin önüne geçilmesi.
+- **Modern Arayüz:** Material UI (MUI) ve Framer Motion ile tasarlanmış pürüzsüz animasyonlar ve karanlık (Dark) mod tasarımı.
+- **Yönetim Paneli:** Ürün yönetimi, masa kontrolü ve sipariş takibi için Admin arayüzü.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 🚀 Kurulum & Çalıştırma (Lokal)
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1. **Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
+   ```
+
+2. **Çevresel Değişkenleri Ayarlayın:**
+   Kök dizinde `.env` dosyası oluşturun ve backend API adresini girin:
+   ```env
+   VITE_API_URL=http://localhost:5001
+   ```
+
+3. **Geliştirme Sunucusunu Başlatın:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Derleme (Production Build):**
+   ```bash
+   npm run build
+   ```
+
+## 🏗 Teknolojiler
+- **Framework:** React 18 & Vite
+- **Dil:** TypeScript
+- **Stil & UI:** Material UI (MUI), Emotion, Framer Motion
+- **State Yönetimi:** Zustand
+- **Yönlendirme:** React Router (HashRouter)
+- **Çoklu Dil:** React-i18next
+- **CI/CD:** GitHub Actions ile otomatik GitHub Pages deployment
+
+---
+*Geliştirme süreci tamamen temiz mimari prensiplerine sadık kalınarak hazırlanmıştır.*

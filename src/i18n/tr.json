@@ -1,0 +1,109 @@
+{
+  "common": {
+    "appName": "BV | Robotik Cafe",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "close": "Kapat",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "search": "Ara",
+    "back": "Geri",
+    "next": "İleri",
+    "yes": "Evet",
+    "no": "Hayır"
+  },
+  "order": {
+    "title": "Sipariş",
+    "orderNow": "Sipariş Ver",
+    "orderNote": "Sipariş Notu",
+    "orderNotePlaceholder": "Siparişiniz hakkında bir not ekleyin...",
+    "emptyCart": "Sepetiniz boş",
+    "addToCart": "Ekle",
+    "removeFromCart": "Kaldır",
+    "cart": "Sepet",
+    "cartItems": "{{count}} ürün",
+    "placeOrder": "Siparişi Gönder",
+    "orderSuccess": "Sipariş Başarılı!",
+    "orderSuccessMessage": "Siparişiniz başarıyla alındı. Robotumuz kısa süre içinde masanıza ulaşacak.",
+    "orderFailed": "Sipariş Başarısız",
+    "orderFailedMessage": "Siparişiniz gönderilemedi. Lütfen tekrar deneyin.",
+    "table": "Masa",
+    "preferences": "Tercihler",
+    "selectPreference": "Tercih Seçin",
+    "quantity": "Adet",
+    "newOrder": "Yeni Sipariş",
+    "trackOrder": "Siparişi Takip Et"
+  },
+  "geo": {
+    "verified": "Konumunuz doğrulandı",
+    "denied": "Konum izni reddedildi",
+    "outside": "Ofis dışındasınız",
+    "requesting": "Konum alınıyor...",
+    "unavailable": "Konum servisi kullanılamıyor",
+    "error": "Konum hatası",
+    "permissionNeeded": "Sipariş vermek için konum izni gereklidir",
+    "distance": "{{distance}}m uzaktasınız",
+    "withinRange": "Ofis alanı içindesiniz"
+  },
+  "qr": {
+    "validFor": "QR Geçerlilik",
+    "expired": "QR Kodu Yenileniyor...",
+    "remaining": "Kalan Süre",
+    "refreshing": "Yenileniyor..."
+  },
+  "admin": {
+    "dashboard": "Kontrol Paneli",
+    "products": "Ürünler",
+    "orders": "Siparişler",
+    "settings": "Ayarlar",
+    "todayOrders": "Bugünkü Siparişler",
+    "activeTables": "Aktif Masalar",
+    "robotStatus": "Robot Durumu",
+    "avgDeliveryTime": "Ort. Teslimat Süresi",
+    "recentOrders": "Son Siparişler",
+    "productManagement": "Ürün Yönetimi",
+    "addProduct": "Ürün Ekle",
+    "editProduct": "Ürün Düzenle",
+    "productName": "Ürün Adı",
+    "productImage": "Ürün Görseli",
+    "productStatus": "Durum",
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "maxOrderLimit": "Max Sipariş Limiti",
+    "geofenceRadius": "Geofence Yarıçapı",
+    "qrRefreshInterval": "QR Yenileme Süresi",
+    "tableManagement": "Masa Yönetimi"
+  },
+  "robot": {
+    "tracker": "Robot Takip",
+    "map": "Robot Haritası",
+    "status": {
+      "idle": "Beklemede",
+      "delivering": "Teslimat Yapıyor",
+      "returning": "Geri Dönüyor",
+      "charging": "Şarj Oluyor"
+    },
+    "steps": {
+      "orderReceived": "Sipariş Alındı",
+      "preparing": "Hazırlanıyor",
+      "onTheWay": "Robot Yolda",
+      "delivered": "Teslim Edildi"
+    },
+    "estimatedTime": "Tahmini Süre",
+    "liveLocation": "Canlı Konum"
+  },
+  "footer": {
+    "termsOfUse": "Kullanım Koşulları",
+    "deliveryConditions": "Teslimat ve İade Koşulları",
+    "privacyAgreement": "Gizlilik Sözleşmesi",
+    "distanceSalesContract": "Mesafeli Satış Sözleşmesi",
+    "aboutUs": "Hakkımızda"
+  },
+  "nav": {
+    "order": "Sipariş",
+    "admin": "Yönetim",
+    "robotTracker": "Robot Takip",
+    "robotMap": "Robot Haritası"
+  }
+}

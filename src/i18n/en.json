@@ -1,0 +1,109 @@
+{
+  "common": {
+    "appName": "BV | Robotic Cafe",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "search": "Search",
+    "back": "Back",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "order": {
+    "title": "Order",
+    "orderNow": "Order Now",
+    "orderNote": "Order Note",
+    "orderNotePlaceholder": "Add a note about your order...",
+    "emptyCart": "Your cart is empty",
+    "addToCart": "Add",
+    "removeFromCart": "Remove",
+    "cart": "Cart",
+    "cartItems": "{{count}} items",
+    "placeOrder": "Place Order",
+    "orderSuccess": "Order Successful!",
+    "orderSuccessMessage": "Your order has been received. Our robot will reach your table shortly.",
+    "orderFailed": "Order Failed",
+    "orderFailedMessage": "Your order could not be sent. Please try again.",
+    "table": "Table",
+    "preferences": "Preferences",
+    "selectPreference": "Select Preference",
+    "quantity": "Quantity",
+    "newOrder": "New Order",
+    "trackOrder": "Track Order"
+  },
+  "geo": {
+    "verified": "Location verified",
+    "denied": "Location permission denied",
+    "outside": "You are outside the office",
+    "requesting": "Getting location...",
+    "unavailable": "Location service unavailable",
+    "error": "Location error",
+    "permissionNeeded": "Location permission is required to place an order",
+    "distance": "{{distance}}m away",
+    "withinRange": "You are within the office area"
+  },
+  "qr": {
+    "validFor": "QR Validity",
+    "expired": "QR Code Refreshing...",
+    "remaining": "Remaining",
+    "refreshing": "Refreshing..."
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "orders": "Orders",
+    "settings": "Settings",
+    "todayOrders": "Today's Orders",
+    "activeTables": "Active Tables",
+    "robotStatus": "Robot Status",
+    "avgDeliveryTime": "Avg. Delivery Time",
+    "recentOrders": "Recent Orders",
+    "productManagement": "Product Management",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "productName": "Product Name",
+    "productImage": "Product Image",
+    "productStatus": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "maxOrderLimit": "Max Order Limit",
+    "geofenceRadius": "Geofence Radius",
+    "qrRefreshInterval": "QR Refresh Interval",
+    "tableManagement": "Table Management"
+  },
+  "robot": {
+    "tracker": "Robot Tracker",
+    "map": "Robot Map",
+    "status": {
+      "idle": "Idle",
+      "delivering": "Delivering",
+      "returning": "Returning",
+      "charging": "Charging"
+    },
+    "steps": {
+      "orderReceived": "Order Received",
+      "preparing": "Preparing",
+      "onTheWay": "Robot On The Way",
+      "delivered": "Delivered"
+    },
+    "estimatedTime": "Estimated Time",
+    "liveLocation": "Live Location"
+  },
+  "footer": {
+    "termsOfUse": "Terms of Use",
+    "deliveryConditions": "Delivery and Return Conditions",
+    "privacyAgreement": "Privacy Agreement",
+    "distanceSalesContract": "Distance Sales Contract",
+    "aboutUs": "About Us"
+  },
+  "nav": {
+    "order": "Order",
+    "admin": "Admin",
+    "robotTracker": "Robot Tracker",
+    "robotMap": "Robot Map"
+  }
+}

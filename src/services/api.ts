@@ -35,24 +35,24 @@ api.interceptors.response.use(
 
 export const apiService = {
   qr: {
-    generate: (locationName: string) => api.get(`/qr/generate?locationName=${encodeURIComponent(locationName)}`).then(res => res.data),
-    validate: (token: string) => api.get(`/qr/validate?token=${token}`).then(res => res.data),
+    generate: (locationName: string) => api.get(`qr/generate?locationName=${encodeURIComponent(locationName)}`).then(res => res.data),
+    validate: (token: string) => api.get(`qr/validate?token=${token}`).then(res => res.data),
   },
   orders: {
-    create: (payload: any) => api.post('/orders', payload).then(res => res.data),
+    create: (payload: any) => api.post('orders', payload).then(res => res.data),
   },
   admin: {
-    getDashboard: () => api.get('/admin/dashboard').then(res => res.data),
+    getDashboard: () => api.get('admin/dashboard').then(res => res.data),
   },
   products: {
-    getAll: () => api.get('/products').then(res => res.data),
-    create: (payload: any) => api.post('/products', payload).then(res => res.data),
-    updateStatus: (id: string, isActive: boolean) => api.put(`/products/${id}/status`, { isActive }).then(res => res.data),
+    getAll: () => api.get('products').then(res => res.data),
+    create: (payload: any) => api.post('products', payload).then(res => res.data),
+    updateStatus: (id: string, isActive: boolean) => api.put(`products/${id}/status`, { isActive }).then(res => res.data),
   },
   locations: {
-    getAll: () => api.get('/locations').then(res => res.data),
-    create: (payload: any) => api.post('/locations', payload).then(res => res.data),
-    updateStatus: (id: string, isActive: boolean) => api.put(`/locations/${id}/status`, { isActive }).then(res => res.data),
+    getAll: () => api.get('locations').then(res => res.data),
+    create: (payload: any) => api.post('locations', payload).then(res => res.data),
+    updateStatus: (id: string, isActive: boolean) => api.put(`locations/${id}/status`, { isActive }).then(res => res.data),
   }
 };
 

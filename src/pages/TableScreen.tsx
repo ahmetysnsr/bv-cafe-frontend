@@ -139,7 +139,7 @@ export default function TableScreen() {
     );
   }
 
-  const orderUrl = `${window.location.origin}/order?table=${tableParam}&token=${qrToken}`;
+  const orderUrl = `${window.location.origin}/#/order?table=${tableParam}&token=${qrToken}`;
 
   return (
     <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', bgcolor: '#0B0F19' }}>

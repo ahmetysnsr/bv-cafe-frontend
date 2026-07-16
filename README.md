@@ -21,7 +21,6 @@ Sistem, güvenliği ve hızı ön planda tutan bir dizi gelişmiş özellik suna
 - **🤖 Otonom Robot Entegrasyonu:** Sipariş alındığı an, kullanıcının masasına (Örn: Saha-Cafe_0_16) otonom hizmet sağlayan Saha Robotik donanımlarına otomatik yönlendirme ve POST payload gönderimi yapılır.
 - **🌍 Çoklu Dil Seçeneği (i18n):** Müşteriler tek dokunuşla Türkçe (TR) ve İngilizce (EN) dilleri arasında anında geçiş yapabilir.
 - **🎛️ Gelişmiş Yönetim Paneli (Admin):** Yetkili kişilerin masa tanımlayabileceği, ürün ekleyip çıkartabileceği ve sistem ayarlarını (QR süresi, konum toleransı) canlı düzenleyebileceği bir admin ekranı mevcuttur.
-- **💅 Pürüzsüz UX/UI (MUI & Framer Motion):** Tüm işlemler arası geçişler, sepet animasyonları ve uyarı mesajları kullanıcı dostu ve akıcı bir karanlık tema (Dark Mode) tasarımıyla sunulur.
 
 ## 🚀 Kurulum & Çalıştırma (Lokal)
 
